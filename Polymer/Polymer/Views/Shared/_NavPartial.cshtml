@@ -1,0 +1,14 @@
+﻿<nav>
+    <core-toolbar>
+        <span>Single Page Polymer</span>
+    </core-toolbar>
+    <core-menu valueattr="hash" selected="{{route}}" selectedmodel="{{selectedPage}}"
+               on-core-select="{{menuItemSelected}}">
+        <template repeat="{{page, i in pages}}">
+            <paper-item hash="{{page.hash}}" noink>
+                <core-icon icon="label{{route != page.hash ? '-outline' : ''}}"></core-icon>
+                <a href="#{{page.hash}}">{{page.name}}</a>
+            </paper-item>
+        </template>
+    </core-menu>
+</nav>
