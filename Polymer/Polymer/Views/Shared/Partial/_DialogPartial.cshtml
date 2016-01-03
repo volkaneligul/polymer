@@ -1,0 +1,41 @@
+﻿<paper-dialog id="usage-1.0-html-import" class="usage" with-backdrop>
+    <h2>Polymer 1.0 usage</h2>
+    <p>
+        Add the following line inside your <code>&lt;head&gt;</code> tag<br /><span style="text-decoration: underline;">AFTER</span> the <code>webcomponents-lite.min.js</code> and other HTML imports.
+    </p>
+    <pre>&lt;link rel="import" href="<span style="font-weight: bold;">path/to/theme.html</span>"&gt;</pre>
+    <p>
+        To use the theme within your custom element, add the following line<br>
+        inside your <code>&lt;dom-module&gt;</code> tag:
+    </p>
+    <pre>&lt;link rel="import" href="<span style="font-weight: bold;">path/to/theme.css</span>" type="css"&gt;</pre>
+    <div class="buttons">
+        <paper-button class="primary" raised dialog-confirm autofocus>OK</paper-button>
+    </div>
+</paper-dialog>
+<paper-dialog id="usage-0.5" class="usage" with-backdrop>
+    <h2>Polymer 0.5 usage</h2>
+    <p>
+        Add the following line inside your <code>&lt;head&gt;</code> tag.
+    </p>
+    <pre>&lt;link rel="stylesheet" href="<span style="font-weight: bold;">path/to/0.5/theme.css</span>" <span style="font-weight: bold;">shim-shadowdom</span>&gt;</pre>
+    <div class="buttons">
+        <paper-button class="primary" raised dialog-confirm autofocus>OK</paper-button>
+    </div>
+</paper-dialog>
+<paper-dialog id="dialog-actions">
+    <h2>Dialog Title</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="buttons horizontal layout">
+        <paper-button class="info" raised>More Info</paper-button>
+        <span class="flex"></span>
+        <paper-button class="primary" dialog-dismiss>Decline</paper-button>
+        <paper-button class="primary" raised dialog-confirm autofocus>Accept</paper-button>
+    </div>
+</paper-dialog>
+<paper-dialog id="dialog-modal" modal>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="buttons">
+        <paper-button class="primary" dialog-confirm autofocus>Tap me to close</paper-button>
+    </div>
+</paper-dialog>
